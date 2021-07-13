@@ -1,1 +1,10 @@
+ img {
+     box-shadow: $box-shadow;
+     border-radius: $border-radius;
+     transition: transform .3s ease-in-out;
 
+     &:hover {
+         transform: scale(1.1);
+         cursor: pointer;
+     }
+ }
