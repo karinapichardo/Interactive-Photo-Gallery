@@ -350,21 +350,51 @@ template {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+}
+
 /* ============================================= */
 /* Components Imports */
 /* ============================================= */
-/* ============================================= */
-/*              Grid System                      */
-/* ============================================= */
+img {
+  box-shadow: 10px 5px 5px #909090;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .gallery-grid {
   max-width: 1000px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, max-content));
   grid-template-rows: repeat(3, 1fr);
-  justify-items: center;
-  grid-row-gap: 1.5rem;
-  margin: 45px auto;
+  justify-content: center;
+  grid-gap: 2.5rem;
+  margin: 20px auto;
   padding: 1rem;
+}
+
+input[type=search] {
+  margin: 20px auto;
+  display: block;
+  width: 35%;
+  height: 45px;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px #909090;
+  padding: 0.5rem;
+  border-color: black;
+  text-indent: 0.5rem;
+}
+input[type=search]::placeholder {
+  font-size: 0.8rem;
+  color: black;
+}
+input[type=search]:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
