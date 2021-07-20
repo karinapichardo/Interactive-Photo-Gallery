@@ -15,7 +15,7 @@ function searchFilter() {
         captions = captions.toUpperCase();
         // check if the current value of the search input is included within any captions, if it is display the associated thumbnail, if not, hide it
         if (captions.includes(userInput)) {
-            thumbnails[i].parentNode.style.display = 'block';
+            thumbnails[i].parentNode.style.display = '';
         } else {
             thumbnails[i].parentNode.style.display = 'none';
         }
